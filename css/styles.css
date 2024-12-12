@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+
+.text-justify{
+  text-align: justify;
+}
+
+/* Navbar style */
+.navbar {
+  background-color: white;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+.navbar-nav .nav-link {
+  color: #777;
+  font-weight: 500;
+  margin-left: 15px;
+}
+.navbar-nav .nav-link:hover {
+  color: black;
+}
+
+  /* Hero Section */
+  .hero {
+    position: relative; /* Make sure the pseudo-element or overlay stays in place */
+    background: url('../Images/uav-drone-banner.jpg') no-repeat center center / cover;
+    min-height: 85vh;
+    color: white; /* Ensure text remains readable */
+    padding: 5rem 0; /* Adjust padding as needed */
+  }
+
+  .maverick-hero{
+    background: url('../Images/maverick_fpv_drone.jpg') no-repeat center center / cover !important;
+  }
+
+  .mining-hero{
+    background: url('../Images/drone_mapping_construction.jpg') no-repeat center center / cover !important
+  }
+
+  .legacy-hero{
+    background: url('../Images/legacy-uav-drone-model.jpg') no-repeat center center / cover !important
+  }
+
+  .innovation-hero{
+    background: url('../Images/delivery-drone-transport.jpg') no-repeat center center / cover !important;
+  }
+
+  .about-hero{
+    background: url('../Images/about-us.jpg') no-repeat top center / cover !important;
+  }
+  
+  .hero::before {
+    content: ''; /* This creates the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure the overlay is behind the text */
+  }
+  
+  .hero .container {
+    position: relative; /* Keeps content above the background and overlay */
+    z-index: 2; /* Ensure content stays on top of the overlay */
+  }
+  
+  /* Visually hidden image for accessibility */
+  .hero-image-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+  }
+  
+  
+  /* Cards */
+  .card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  /* Ensure all images inside the cards are of the same size */
+.card img {
+  width: 100%; /* Make image fill the width of the card */
+  height: 250px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+}
+
+  
+  /* CTA Section */
+  .cta {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+  }
+  
+  /* Footer Links */
+  footer a {
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
